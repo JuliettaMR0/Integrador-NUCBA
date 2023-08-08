@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER Y NAVBAR */
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    /* background: linear-gradient(to bottom,#f55114, #9e4626 ) */
+    background-image: url(sep09.jpg);
+    background-size: cover;
+}
+
+.logo{
+    height: 150px;
+    cursor: pointer;
+    box-shadow: gray;
+}
+
+.navbar {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navbar-list {
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #000;
+    display: flex;
+    gap: 50px;
+    list-style: none
+}
+
+.navbar-a a {
+    text-decoration: none;
+    padding: 12px 15px;
+    color: aliceblue;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    transition:  0.3s , top 0.3s;
+}
+.navbar-a a:hover {
+    top: -3px;
+}
+
+/* FIN DEL NAVBAR */
+
+/* cOMIENZO DEL MAIN */
+main {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color:	#39386d
+}
+
+/*CSS del hero */
+
+#hero {
+    display: flex;
+    background-color: #e05624;
+    width: 100%;
+    /* margin: 0;
+    padding: 0; */
+    overflow: hidden;
+    gap: 40px;
+}
+
+
+.info-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    margin: 50px 0;
+    padding: 20px;
+    color: aliceblue;
+  }
+  
+  .info-hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .info-hero p {
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+   
+  .logo-hero .logo-img {
+    max-height: 250px;
+    width: auto;
+    margin-top: 22px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+ /* fin del hero*/
+
+ /*Comienzo del about*/
+
+ #about {
+    display: flex;
+    width: 100%;
+ }
+
+ .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+ }
+
+ .about-info h2 {
+    font-size: 40px;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: bounce 0.6s infinite; 
+  padding: 20px;
+ }
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+      }
+      50% {
+        transform: translateY(-5px); 
+      } 
+}
+
+.about-info p {
+    padding: 10px;
+    font-size: 27px;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(9, 4, 88, 0.5);
+}
+
+.img-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-about img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.img-about:hover img {
+    transform: scale(1.03);
+}
