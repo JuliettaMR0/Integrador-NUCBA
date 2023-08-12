@@ -15,6 +15,13 @@ header {
     /* background: linear-gradient(to bottom,#f55114, #9e4626 ) */
     background-image: url(sep09.jpg);
     background-size: cover;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+
 }
 
 .logo{
@@ -23,12 +30,14 @@ header {
     box-shadow: gray;
 }
 
+
 .navbar {
-    height: 80%;
-    width: 40%;
+    height: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+   
     
 }
 .navbar-list {
@@ -36,7 +45,8 @@ header {
     text-shadow: 2px 2px 4px #000;
     display: flex;
     gap: 50px;
-    list-style: none
+    list-style: none;
+    
 }
 
 .navbar-a a {
@@ -52,6 +62,23 @@ header {
     top: -3px;
 }
 
+.menu-label {
+  cursor: pointer;
+  display: none;
+  
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
 /* FIN DEL NAVBAR */
 
 /* cOMIENZO DEL MAIN */
@@ -61,6 +88,7 @@ main {
 
 body {
     background: linear-gradient(to bottom, rgb(10, 8, 48), #3529a1, rgb(10, 8, 48)  );
+    
 }
 
 html {
@@ -76,6 +104,7 @@ html {
     width: 100%;
     /* margin: 0;
     padding: 0; */
+    padding-top: 120px;
     overflow: hidden;
     gap: 40px;
 }
@@ -357,4 +386,7 @@ footer {
   .container-footer p {
     font-size: 18px;
   }
+  
+  /*Fin del footer */
+
   

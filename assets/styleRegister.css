@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+    background-image: url(https://as.com/esports/imagenes/2016/10/28/league_of_legends/1477682122_921805_1477683526_noticia_normal.jpg);
+    background-size: cover;
+  }
+
+  header, main, footer {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+header h1 {
+    font-size: 65px;
+    color: #000000;
+    text-align: center;
+    text-shadow: 4px 4px 4px #ffffff;
+    border: 1px solid #e05624;
+
+  }
+
+  .register-form {
+    background-color: #ffffff48;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #e05624;
+    padding: 20px;
+  }
+
+  .register-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 1px 1px 2px #ffffff;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"],
+  .register-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-form button {
+    background-color: #e05624;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-form button:hover {
+    background-color: #421fe2;
+  }
+
+  .button-inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-inicio a {
+    display: inline-block;
+    background-color: #01030c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.button-inicio a:hover {
+    background-color: #d04520; 
+}
