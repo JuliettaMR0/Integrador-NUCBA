@@ -1,4 +1,9 @@
 @media (max-width: 992px) {
+
+    .navbar-a a {
+        width: 100%; /* Ocupa todo el ancho disponible en el menú */
+        padding: 12px 15px; /* Ajusta el padding según tus preferencias */
+    }
     .nav {
         display: flex;
         position: absolute;
@@ -25,33 +30,34 @@
         transform: scaleY(1);
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-   
-
-    .nav-list {
+    /* .nav-list {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         width: 100%;
         padding: 0;
-    } 
-
-    .navbar-list a {
-        text-decoration: none;
-        padding: 8px 15px;
-        color: aliceblue;
-        font-size: 18px;
-        border-radius: 5px;
-        position: relative;
-        transition:  0.3s, top 0.3s;
-        width: auto; 
-        box-sizing: border-box; 
+    }  */
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0; /* Elimina el padding para controlar el espacio entre elementos con margen */
+        position: absolute;
+        top: 100px; /* Ajusta esta posición según la altura de tu encabezado */
+        left: 0;
+        background-image: url(sep09.jpg);
+        background-size: cover;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 4px 8px #3529a1;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+        z-index: 2;
+        display: none;
     }
-
     .menu-label {
         cursor: pointer;
         display: flex;
