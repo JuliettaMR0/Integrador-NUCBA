@@ -1,5 +1,6 @@
 @media (max-width: 992px) {
     .nav {
+        display: flex;
         position: absolute;
         top: 99px;
         left: 5%;
@@ -26,11 +27,11 @@
 
    
 
-    .nav-list {
+    /* .nav-list {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
+    } */
 
     .menu-label {
         cursor: pointer;
@@ -49,18 +50,39 @@
         transform: scaleY(1);
     }
 
-    .hero-info h1 {
-        width: 100%;
-        max-width: 500px;
-        min-width: none;
+    /*Comienzo del Hero */
+
+    #hero {
+        display: block; 
+        padding-top: 80px;
     }
-    .hero-info p {
-        width: 80%;
-        max-width: 600px;
+    
+    .info-hero {
+        margin: 30px 0;
+        padding: 10px;
+        text-align: center;
     }
 
-    .img-hero {
-        display: none;
+    .info-hero h1 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .info-hero p {
+        font-size: 20px;
+    }
+
+    .button-login,
+    .button-register {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .logo-hero .logo-img {
+        max-height: 180px;
+        margin-top: 40px;
+        margin-left: 0;
     }
 
 }
