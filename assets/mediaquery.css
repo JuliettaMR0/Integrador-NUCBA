@@ -27,6 +27,7 @@
    
 
     .nav-list {
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -47,5 +48,20 @@
         display: flex;
         transform: scaleY(1);
     }
+
+    .hero-info h1 {
+        width: 100%;
+        max-width: 500px;
+        min-width: none;
+    }
+    .hero-info p {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .img-hero {
+        display: none;
+    }
+
 }
 
