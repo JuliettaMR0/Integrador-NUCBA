@@ -1,16 +1,4 @@
 @media (max-width: 992px) {
-
-    .navbar-list a {
-        text-decoration: none;
-        padding: 12px 15px;
-        color: aliceblue;
-        font-size: 18px;
-        border-radius: 5px;
-        position: relative;
-        transition:  0.3s, top 0.3s;
-        width: 100%; 
-        box-sizing: border-box; 
-    }
     .nav {
         display: flex;
         position: absolute;
@@ -37,12 +25,31 @@
         transform: scaleY(1);
     }
 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
    
 
     .nav-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
         width: 100%;
+        padding: 0;
+    } 
+
+    .navbar-list a {
+        text-decoration: none;
+        padding: 8px 15px;
+        color: aliceblue;
+        font-size: 18px;
+        border-radius: 5px;
+        position: relative;
+        transition:  0.3s, top 0.3s;
+        width: auto; 
+        box-sizing: border-box; 
     }
 
     .menu-label {
