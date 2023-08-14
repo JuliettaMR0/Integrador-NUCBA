@@ -15,6 +15,18 @@
         z-index: 2;
         display: none;
     }
+
+    .navbar-a a {
+        text-decoration: none;
+        padding: 12px 15px;
+        color: aliceblue;
+        font-size: 18px;
+        border-radius: 5px;
+        position: relative;
+        transition:  0.3s, top 0.3s;
+        width: 100%; /* Asegurar que los elementos <a> ocupen todo el ancho */
+        box-sizing: border-box; /* Incluir el padding en el ancho total */
+    }
     /* .nav {
         display: flex;
         position: absolute;
