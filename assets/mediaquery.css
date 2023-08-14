@@ -81,9 +81,12 @@
 
     .logo-hero .logo-img {
         max-height: 180px;
-        margin-top: 40px;
-        margin-left: 0;
+        margin: 40px auto 0; 
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
+    /* fin del hero */
 }
 
