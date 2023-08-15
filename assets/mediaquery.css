@@ -97,12 +97,12 @@
     /* fin del hero */
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 415px) {
         .nav {
             position: absolute;
             top: 99px;
             left: 0%;
-            right: 3%;
+            right: 0%;
             width: 100%;;
             flex-direction: column;
             justify-content: center;
@@ -130,9 +130,10 @@
             padding: 10px;
         }
     
-        .nav-list {
+        .navbar-list {
             display: flex;
-            flex-direction: column;
+            gap: 10px;
+            list-style: none;
             
         }
     
