@@ -97,3 +97,102 @@
     /* fin del hero */
     }
 
+    @media (max-width: 420px) {
+        .nav {
+            position: absolute;
+            top: 99px;
+            left: 0%;
+            right: 3%;
+            width: 100%;;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(sep09.jpg);
+            background-size: cover;
+            border-radius: 12px;
+            border: 1px solid #000000;
+            border-top: none;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 0px 4px 8px #3529a1;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 10px;
+            z-index: 2;
+            display: none;
+            transition: all 0.3s ease;
+            transform-origin: top;
+            transform: scaleY(1);
+        }
+        
+        .menu-label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .menu-label img {
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+    
+        .menu-icon {
+            width: 40px;
+            height: 45px;
+            margin-right: 8px;
+        }
+    
+        #menu-toggle:checked + .nav {
+            display: flex;
+            transform: scaleY(1);
+        }
+    
+        /*Comienzo del Hero */
+    
+        #hero {
+            display: block;
+            padding-top: 70px;
+        }
+    
+        .info-hero {
+            margin: 25px 0;
+            padding: 8px;
+            text-align: center;
+        }
+    
+        .info-hero h1 {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+    
+        .info-hero p {
+            font-size: 16px;
+        }
+    
+        .button-login,
+        .button-register {
+            padding: 6px 10px;
+            font-size: 12px;
+            margin: 4px;
+        }
+    
+        .logo-hero .logo-img {
+            max-height: 120px;
+            margin: 30px auto 0;
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+        }
+    
+        /* fin del hero */
+        
+    }
+    
+
